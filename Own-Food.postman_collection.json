@@ -1,0 +1,4053 @@
+{
+	"info": {
+		"_postman_id": "55e5ac54-fdb2-4188-aa71-1e9d89c755f4",
+		"name": "Own-Food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25343585"
+	},
+	"item": [
+		{
+			"name": "Super Admin",
+			"item": [
+				{
+					"name": "login-super-admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\":\"0000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/login-super-admin",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"login-super-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registration-super-admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"yyp@gmail.com\",\r\n    \"firstName\": \"Amit\",\r\n    \"lastName\": \"Jhon\",\r\n    \"mobile\": \"01814331350\",\r\n    \"password\": \"0000\",\r\n    \"photo\":\"photo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/registration-super-admin",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"registration-super-admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sub Admin",
+			"item": [
+				{
+					"name": "registration-sub-admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"yyy10000@dem.com\",\r\n    \"name\":\"Rahul\",\r\n    \"password\": \"12345\",\r\n    \"role\": \"editor\",\r\n    \"mobile\": \"0155223\",\r\n    \"photo\": \"photo\",\r\n    \"country\": \"Bangladesh\",\r\n    \"city\": \"chittagong\",\r\n    \"zip\": \"5263\",\r\n    \"designation\": \"Student\",\r\n    \"address\": \"New Market\",\r\n   \"userAccess\": [\r\n      {\r\n        \"create\": true,\r\n        \"edit\": false,\r\n        \"update\": true,\r\n        \"delete\": false\r\n      }\r\n    ],\r\n    \"blogAccess\": [\r\n      {\r\n        \"create\": true,\r\n        \"edit\": false,\r\n        \"update\": true,\r\n        \"delete\": false\r\n      }\r\n    ],\r\n    \"foodAccess\": [\r\n      {\r\n        \"create\": true,\r\n        \"edit\": false,\r\n        \"update\": true,\r\n        \"delete\": false\r\n      }\r\n    ],\r\n     \"riderAccess\": [\r\n      {\r\n        \"create\": true,\r\n        \"edit\": false,\r\n        \"update\": true,\r\n        \"delete\": false\r\n      }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/registration-sub-admin",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"registration-sub-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login-sub-admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"yyy10000@dem.com\",\r\n    \"password\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/login-sub-admin",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"login-sub-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-sub-admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-sub-admin",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-sub-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-sub-admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"email\": \"subadmin_2@demo.com\",\r\n    \"name\":\"RahulRRRRRR\",\r\n    \"password\": \"12345\",\r\n    \"role\": \"editor\",\r\n    \"mobile\": \"0155223\",\r\n    \"photo\": \"photo\",\r\n    \"country\": \"Bangladesh\",\r\n    \"city\": \"chittagong\",\r\n    \"zip\": \"5263\",\r\n    \"designation\": \"Student\",\r\n    \"address\": \"New Market\",\r\n   \"userAccess\": [\r\n      {\r\n        \"create\": true,\r\n        \"edit\": false,\r\n        \"update\": true,\r\n        \"delete\": false\r\n      }\r\n    ],\r\n    \"blogAccess\": [\r\n      {\r\n        \"create\": true,\r\n        \"edit\": false,\r\n        \"update\": true,\r\n        \"delete\": false\r\n      }\r\n    ],\r\n    \"foodAccess\": [\r\n      {\r\n        \"create\": true,\r\n        \"edit\": false,\r\n        \"update\": true,\r\n        \"delete\": false\r\n      }\r\n    ],\r\n     \"riderAccess\": [\r\n      {\r\n        \"create\": true,\r\n        \"edit\": false,\r\n        \"update\": true,\r\n        \"delete\": false\r\n      }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-sub-admin/63da38064d101e722ff81383",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-sub-admin",
+								"63da38064d101e722ff81383"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-sub-admin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-sub-admin/63da37a3c4dc9b55b87094ce",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-sub-admin",
+								"63da37a3c4dc9b55b87094ce"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "create-users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"amitbd590@gmail.com\",\r\n    \"userFullName\": \"Raju\",\r\n    \"userPassword\": \"123456\",\r\n    \"userName\": \"Raju123\",\r\n    \"userEmail\": \"demo@gmail.com\",\r\n    \"userMobileNo\":\"01521122522\",\r\n    \"userPhoto\": \"img\",\r\n    \"userDateOfBirth\": \"12-02-1990\",\r\n    \"userGender\": \"male\",\r\n    \"latitude\": \"12540\",\r\n    \"longitude\": \"85444521\",\r\n    \"address\":\"CTG\",\r\n    \"zipCode\": \"4580\",\r\n    \"cityID\": \"63e8b32a798c4de2d1ba6c3d\",\r\n    \"regionID\": \"63e776fa6e49244ed17a4996\",\r\n    \"countryID\": \"63eb3c5af7ec2bc366654b88\",\r\n    \"userTermsAgreed\": true,\r\n    \"sellerStatus\": true,\r\n    \"riderStatus\": true,\r\n    \"rendingOTP\": \"202014\",\r\n    \"activatedOTP\":\"474522\",\r\n    \"userMobileVerified\":true,\r\n    \"userEmailVerified\": true,\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-users",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login-users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"amitbd590@gmail.com\",\r\n    \"userPassword\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/login-users",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"login-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-users",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-users/63ecb0f485da03556cc83a65",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-users",
+								"63ecb0f485da03556cc83a65"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"demo@gmail.com\",\r\n    \"userFullName\": \"RETTTT\",\r\n    \"userPassword\": \"123456\",\r\n    \"userName\": \"Raju123\",\r\n    \"userEmail\": \"demo@gmail.com\",\r\n    \"userMobileNo\":\"01521122522\",\r\n    \"userPhoto\": \"img\",\r\n    \"userDateOfBirth\": \"12-02-1990\",\r\n    \"userGender\": \"male\",\r\n    \"latitude\": \"12540\",\r\n    \"longitude\": \"85444521\",\r\n    \"address\":\"CTG\",\r\n    \"zipCode\": \"4580\",\r\n    \"cityID\": \"63e8b32a798c4de2d1ba6c3d\",\r\n    \"regionID\": \"63e776fa6e49244ed17a4996\",\r\n    \"countryID\": \"63eb3c5af7ec2bc366654b88\",\r\n    \"userTermsAgreed\": true,\r\n    \"sellerStatus\": true,\r\n    \"riderStatus\": true,\r\n    \"rendingOTP\": \"202014\",\r\n    \"activatedOTP\":\"474522\",\r\n    \"userMobileVerified\":true,\r\n    \"userEmailVerified\": true,\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-users/63ecaf6185da03556cc83a60",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-users",
+								"63ecaf6185da03556cc83a60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-users",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-users/63ecb0f485da03556cc83a65",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-users",
+								"63ecb0f485da03556cc83a65"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget-password-verify-email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/forget-password-verify-email/amitbd591@gmail.com",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"forget-password-verify-email",
+								"amitbd591@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify-otp-service-forget-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/verify-otp-service-forget-password/bijontalukder1247@gmail.com/130709",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"verify-otp-service-forget-password",
+								"bijontalukder1247@gmail.com",
+								"130709"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password-service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"bijontalukder1247@gmail.com\",\r\n    \"userPassword\": \"1230\",\r\n    \"otp\":\"130709\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/reset-password-service",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"reset-password-service"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Designation",
+			"item": [
+				{
+					"name": "create-designation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Play\",\r\n    \"status\": \"Panding\",\r\n    \"mobile\": \"025630\",\r\n    \"createdBy\": \"Rahul\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-designation",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-designation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-designation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-designation",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-designation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-designation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-designation/63df79f6c333a20e8aaa1335",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-designation",
+								"63df79f6c333a20e8aaa1335"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-designation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"WWWWWW\",\r\n    \"status\": \"Panding\",\r\n    \"mobile\": \"025630\",\r\n    \"createdBy\": \"Rahul\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-designation/63da3b58e5516dc845b1d90b",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-designation",
+								"63da3b58e5516dc845b1d90b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-designation",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-designation/63da3b58e5516dc845b1d90b",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-designation",
+								"63da3b58e5516dc845b1d90b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "create-category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"categoryName\": \"CAT-2\",\r\n    \"categoryImage\": \"img\",\r\n    \"categorySlug\":\"https\",\r\n    \"status\": true,\r\n    \"createdBy\": \"ewewe\",\r\n    \"updatedBy\": \"rtryr\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-category",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-category",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-category/64046a615034b8b4c03658f9",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-category",
+								"64046a615034b8b4c03658f9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryName\": \"Duck\",\r\n    \"categoryImage\": \"img\",\r\n    \"categorySlug\": \"hhttp .......\",\r\n    \"categoryStatus\": \"Pending\",\r\n    \"createdBy\": \"Raj\",\r\n    \"updatedBy\": \"Madud\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-category/63ddeed99220326059bdac45",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-category",
+								"63ddeed99220326059bdac45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-category/63ddeed99220326059bdac45",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-category",
+								"63ddeed99220326059bdac45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-food-by-category by limit",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/get-food-by-category/640c2f585c59c840eb178d8e/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-food-by-category",
+								"640c2f585c59c840eb178d8e",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sub Category",
+			"item": [
+				{
+					"name": "create-subcategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryName\": \"Sub Cat-2 ---- CAT-1\",\r\n    \"categorySlug\": \"slug\",\r\n    \"status\": \"pending\",\r\n    \"categoryID\": \"63eb39684acc4d76451425d1\",\r\n    \"createdBy\": \"amit\"\r\n \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-subcategory",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-subcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-subcategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-subcategory",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-subcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-subcategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-subcategory/63eb35bb880ea5ec7957a6a4",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-subcategory",
+								"63eb35bb880ea5ec7957a6a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-subcategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryName\": \"FFFFFFFFF\",\r\n    \"categorySlug\": \"slug\",\r\n    \"status\": \"pending\",\r\n    \"categoryID\": \"asfd\",\r\n    \"createdBy\": \"amit\"\r\n \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-subcategory/63df3602a98e0315497eec52",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-subcategory",
+								"63df3602a98e0315497eec52"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-subcategory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-subcategory/63df3602a98e0315497eec52",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-subcategory",
+								"63df3602a98e0315497eec52"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FoodType",
+			"item": [
+				{
+					"name": "create-foodType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n     \"foodTypeName\": \"EEEEE\",\r\n    \"foodTypeImage\": \"img\",\r\n    \"foodTypeCategories\": \"Infian Foods\",\r\n    \"status\": true,\r\n    \"createdBy\": \"Rahul\",\r\n    \"updatedBy\": \"Mizan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-foodType",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-foodType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-foodType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-foodType",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-foodType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-foodType",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-foodType/63de1f07abfa6291aaf08e1c",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-foodType",
+								"63de1f07abfa6291aaf08e1c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-foodType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"foodTypeName\": \"GGG Food\",\r\n    \"foodTypeImage\": \"img\",\r\n    \"foodTypeCategories\": \"Infian Foods\",\r\n    \"status\": \"Pending\",\r\n    \"createdBy\": \"Rahul\",\r\n    \"updatedBy\": \"Mizan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-foodType/63de1de0abb2a99dedc1a4e3",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-foodType",
+								"63de1de0abb2a99dedc1a4e3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-foodType",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-foodType/63de1de0abb2a99dedc1a4e3",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-foodType",
+								"63de1de0abb2a99dedc1a4e3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PortionSizeUnit",
+			"item": [
+				{
+					"name": "create-PortionSizeUnit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sizeUnitName\": \"TTT20\",\r\n    \"status\": \"Nill\",\r\n    \"createdBy\": \"Don\",\r\n    \"updatedBy\": \"Raj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-portionSizeUnit",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-portionSizeUnit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-portionSizeUnit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-portionSizeUnit",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-portionSizeUnit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-portionSizeUnit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-portionSizeUnit/63df5b737019d2183aa55d42",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-portionSizeUnit",
+								"63df5b737019d2183aa55d42"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-portionSizeUnit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sizeUnitName\": \"DDDDDDDDDDD\",\r\n    \"status\": \"Nill\",\r\n    \"createdBy\": \"Don\",\r\n    \"updatedBy\": \"Raj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-portionSizeUnit/63df358ba7589334af79c71a",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-portionSizeUnit",
+								"63df358ba7589334af79c71a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-portionSizeUnit",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-portionSizeUnit/63df358ba7589334af79c71a",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-portionSizeUnit",
+								"63df358ba7589334af79c71a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OrderStatus",
+			"item": [
+				{
+					"name": "create-orderStatus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderStatusTitle\": \"NFFF Food\",\r\n    \"orderBy\": 2,\r\n    \"status\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-orderStatus",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-orderStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-orderStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-orderStatus",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-orderStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-orderStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-orderStatus/63df844ec5a259ec8ac07fb4",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-orderStatus",
+								"63df844ec5a259ec8ac07fb4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-orderStatus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderStatusTitle\": \"RRRRRRRR Food\",\r\n    \"orderBy\": 2,\r\n    \"status\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-orderStatus/63df66290b6ef45915943530",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-orderStatus",
+								"63df66290b6ef45915943530"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-orderStatus",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-orderStatus/63df66290b6ef45915943530",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-orderStatus",
+								"63df66290b6ef45915943530"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Country",
+			"item": [
+				{
+					"name": "create-country",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryName\":\"IND\",\r\n    \"countryFlag\": \"url\",\r\n    \"countryCode\": \"+88\",\r\n    \"countryPhoneCode\": \"8630\",\r\n    \"countryCapital\": \"Dhaka\",\r\n    \"status\": true,\r\n    \"createdBy\": \"Raj\",\r\n    \"updatedBy\": \"Hasan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-country",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-country"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-country",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-country"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-country/63eb3c5af7ec2bc366654b88",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-country",
+								"63eb3c5af7ec2bc366654b88"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-country",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryName\":\"Ban\",\r\n    \"countryFlag\": \"url\",\r\n    \"countryCode\": \"+88\",\r\n    \"countryPhoneCode\": \"8630\",\r\n    \"countryCapital\": \"Dhaka\",\r\n    \"status\": true,\r\n    \"createdBy\": \"Raj\",\r\n    \"updatedBy\": \"Hasan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-country/63e4b9fab931d12e555b6541",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-country",
+								"63e4b9fab931d12e555b6541"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-country",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-country/63e4b9fab931d12e555b6541",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-country",
+								"63e4b9fab931d12e555b6541"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-food-group-by-country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-food-group-by-country",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-food-group-by-country"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get country by admin selected",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":[\"64101b05e20c987d3f511ac4\", \"64101b38e20c987d3f511acd\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/get-country-by-admin-selected",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-country-by-admin-selected"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuisine",
+			"item": [
+				{
+					"name": "create-cuisine",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"countryID\": \"63eb3c5af7ec2bc366654b88\",\r\n    \"cuisineName\": \"DDD\",\r\n    \"cuisineImage\": \"url\",\r\n    \"cuisineImageThumb\": \"url\",\r\n    \"status\": true,\r\n    \"createdBy\": \"Rahul\",\r\n    \"updatedBy\": \"RTY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-cuisine",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-cuisine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-cuisine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-cuisine",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-cuisine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-cuisine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-cuisine/63eb3c94f7ec2bc366654b8d",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-cuisine",
+								"63eb3c94f7ec2bc366654b8d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-cuisine",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuisineID\": \"50555\",\r\n    \"cuisineName\": \"Indian Food\",\r\n    \"cuisineImage\": \"url\",\r\n    \"cuisineImageThumb\": \"url\",\r\n    \"status\": true,\r\n    \"createdBy\": \"Rahul\",\r\n    \"updatedBy\": \"RTY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-cuisine/63e1ec116e53b7bdd4f55c29",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-cuisine",
+								"63e1ec116e53b7bdd4f55c29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-cuisine",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-cuisine/63e09f46e53ca2e4c082794b",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-cuisine",
+								"63e09f46e53ca2e4c082794b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ingrediants",
+			"item": [
+				{
+					"name": "create-ingrediants",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"ingredientID\": \"IN 8888\",\r\n    \"ingredientName\": \"FFFF\",\r\n    \"ingredientImage\": \"URL\",\r\n    \"ingredientThumb\": \"img-url\",\r\n    \"ingredientQty\": \"120\",\r\n    \"status\": true,\r\n    \"cuisineID\": \"63e1f9d1a6b01835641a7f44\",\r\n    \"createdBy\": \"RT320\",\r\n    \"updatedBy\": \"Raj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-ingrediants",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-ingrediants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-ingrediants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-ingrediants",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-ingrediants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-ingrediants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-ingrediants/63e1f9eaa6b01835641a7f46",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-ingrediants",
+								"63e1f9eaa6b01835641a7f46"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-ingrediants",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"ingredientID\": \"RTEWE\",\r\n    \"ingredientName\": \"Food\",\r\n    \"ingredientImage\": \"URL\",\r\n    \"ingredientThumb\": \"img-url\",\r\n    \"ingredientQty\": \"120\",\r\n    \"status\": true,\r\n    \"cuisineID\": \"RT\",\r\n    \"createdBy\": \"RT320\",\r\n    \"updatedBy\": \"Raj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-ingrediants/63e0bd3eff94124759da5844",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-ingrediants",
+								"63e0bd3eff94124759da5844"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-ingrediants",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-ingrediants/63e0bd3eff94124759da5844",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-ingrediants",
+								"63e0bd3eff94124759da5844"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AdditionalTags",
+			"item": [
+				{
+					"name": "create-additionaltags",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"tagID\": \"676798sdfdsffdff\",\r\n\"tagName\": \"chicken11\",\r\n\"status\": true,\r\n \"createdBy\": \"amit\",\r\n \"updatedBy\":\"amit vhai\" \r\n }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-additionaltags",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-additionaltags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-additionaltags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-additionaltags",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-additionaltags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-additionaltags",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"tagID\": \"676798sgggdfdsffdff\",\r\n\"tagName\": \"chicken11\",\r\n\"status\": true,\r\n \"createdBy\": \"amit\",\r\n \"updatedBy\":\"amit vhai\" \r\n }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-additionaltags/63e2335c16569a03cc5929d2",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-additionaltags",
+								"63e2335c16569a03cc5929d2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-additionaltags",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-additionaltags/63e2335c16569a03cc5929d2",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-additionaltags",
+								"63e2335c16569a03cc5929d2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-singleadditionaltags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-singleadditionaltags/63df8aadd5fb5b3fb9063373",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-singleadditionaltags",
+								"63df8aadd5fb5b3fb9063373"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BonusFreeItem",
+			"item": [
+				{
+					"name": "create-bonus-freeitem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"bonusFreeItemName\": \"asd\",\r\n       \"bonusFreeItemImage\": \"url\",\r\n        \"bonusFreeItemThum\" : \"url\",\r\n        \"bonusFreeItemVideo\": \"url\",\r\n        \"sellerID\":\"1111\"\r\n\r\n\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-bonus-freeitem",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-bonus-freeitem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-bonus-freeitem",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-bonus-freeitem",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-bonus-freeitem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-bonus-freeitem",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-bonus-freeitem/63e23c56a694ff7cd17c1452",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-bonus-freeitem",
+								"63e23c56a694ff7cd17c1452"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-bonus-freeitem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"bonusFreeItemName\": \"tttttttttttttt\",\r\n       \"bonusFreeItemImage\": \"url\",\r\n        \"bonusFreeItemThum\" : \"url\",\r\n        \"bonusFreeItemVideo\": \"url\",\r\n        \"sellerID\":\"1111\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-bonus-freeitem/63e23c56a694ff7cd17c1452",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-bonus-freeitem",
+								"63e23c56a694ff7cd17c1452"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-bonus-freeitem",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-bonus-freeitem/63e23c56a694ff7cd17c1452",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-bonus-freeitem",
+								"63e23c56a694ff7cd17c1452"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Food",
+			"item": [
+				{
+					"name": "create-food",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"customerID\" :\"63e7521cd7cf295bf793a466\",\r\n    \"sellerID\":\"63f331a8ce096ab67640ec8b\",\r\n    \"foodTypeID\": \"63e7521cd7cf295bf793a466\",\r\n    \"categoryID\": \"64046a615034b8b4c03658f9\",\r\n    \"foodName\": \"DDDDDDDDDDDDDDDDDD\",\r\n    \"sellerImage\":\"https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60\",\r\n    \"sellerName\":\"Alex\",\r\n    \"foodSlug\": \"http\",\r\n    \"foodImage\": \"https://www.foodiesfeed.com/wp-content/uploads/2021/10/carrot-cake-with-fresh-fruits.jpg\",\r\n    \"foodThumb\": \"https://www.foodiesfeed.com/wp-content/uploads/2021/10/carrot-cake-with-fresh-fruits.jpg\",\r\n    \"foodVideo\": \"url\",\r\n    \"foodQty\":\"4\",\r\n    \"foodPrice\": \"550\",\r\n    \"cuisineCollection\":[\r\n        {\r\n            \"_id\": \"63e4c64cd07d1dc2b949c6ce\",\r\n            \"cuisineName\": \"EEEEEE\",\r\n            \"cuisineImage\": \"url\",\r\n            \"cuisineImageThumb\": \"url\",\r\n            \"status\": true,\r\n            \"createdBy\": \"Rahul\",\r\n            \"createdDate\": \"2023-02-09T09:47:48.783Z\",\r\n            \"updatedBy\": \"RTY\",\r\n            \"updatedDate\": \"2023-02-09T09:47:48.783Z\"\r\n        },\r\n        {\r\n            \"_id\": \"63e4c651d07d1dc2b949c6d0\",\r\n            \"cuisineName\": \"FFFF\",\r\n            \"cuisineImage\": \"url\",\r\n            \"cuisineImageThumb\": \"url\",\r\n            \"status\": true,\r\n            \"createdBy\": \"Rahul\",\r\n            \"createdDate\": \"2023-02-09T09:47:48.783Z\",\r\n            \"updatedBy\": \"RTY\",\r\n            \"updatedDate\": \"2023-02-09T09:47:48.783Z\"\r\n        },\r\n        {\r\n            \"_id\": \"63e4c655d07d1dc2b949c6d2\",\r\n            \"cuisineName\": \"DDD\",\r\n            \"cuisineImage\": \"url\",\r\n            \"cuisineImageThumb\": \"url\",\r\n            \"status\": true,\r\n            \"createdBy\": \"Rahul\",\r\n            \"createdDate\": \"2023-02-09T09:47:48.783Z\",\r\n            \"updatedBy\": \"RTY\",\r\n            \"updatedDate\": \"2023-02-09T09:47:48.783Z\"\r\n        }\r\n],\r\n    \"foodDiscountPrice\": \"120\",\r\n    \"foodDiscountPercentage\":\"30\",\r\n    \"foodDiscountStartDate\": \"Wednesday, February 8, 2023\",\r\n    \"foodDiscountEndDate\": \"Wednesday, February 8, 2023\",\r\n    \"foodPortionSize\": 7,\r\n    \"foodPortionSizeUnit\": \"20\",\r\n    \"foodMinimumOrderQty\": \"45\",\r\n    \"foodAdditionalInfo\": \"ointro\",\r\n    \"foodAdditionalTags\":[\"A\",\"B\",\"C\"],\r\n    \"foodExpiryTime\": \"Wednesday, February 8, 2023\",\r\n    \"customerDesireDeliveryTime\" : \"Wednesday, February 8, 2023\",\r\n    \"foodAvailableDays\":[\"A\",\"B\",\"C\"],\r\n    \"foodAvailableSameDaysEachWeek\": true,\r\n    \"foodOrderBeforeTime\": \"Wednesday, February 8, 2023\",\r\n    \"foodRating\": \"5\",\r\n    \"status\": true,\r\n   \r\n    \"foodLabel\": [\"A\",\"B\",\"C\"],\r\n    \"customerRequestedFoodQty\":  \"23\",\r\n    \"customerDesireDeliveryDate\": \"Wednesday, February 8, 2023\",\r\n    \"createdBy\":  \"Rahul\",\r\n    \"updatedBy\":  \"Raj\",\r\n    \"BSR\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-food",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-food"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-food",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-food",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-food"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-food",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-food/63e760ba7dfb72bf9f7d3083",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-food",
+								"63e760ba7dfb72bf9f7d3083"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-food",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"customerID\" :\"63e7521cd7cf295bf793a466\",\r\n    \"sellerID\":\"63e7521cd7cf295bf793a466\",\r\n    \"foodTypeID\": \"63e7521cd7cf295bf793a466\",\r\n    \"categoryID\": \"640c2f5a5c59c840eb178d90\",\r\n    \"foodName\": \"GoFFFF\",\r\n    \"sellerImage\":\"https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60\",\r\n    \"sellerName\":\"Alex\",\r\n    \"foodSlug\": \"http\",\r\n    \"foodImage\": \"img\",\r\n    \"foodThumb\": \"thum\",\r\n    \"foodVideo\": \"url\",\r\n    \"foodQty\":\"4\",\r\n    \"foodPrice\": \"550\",\r\n    \"cuisineCollection\":[\r\n        {\r\n            \"_id\": \"63e4c64cd07d1dc2b949c6ce\",\r\n            \"cuisineName\": \"EEEEEE\",\r\n            \"cuisineImage\": \"url\",\r\n            \"cuisineImageThumb\": \"url\",\r\n            \"status\": true,\r\n            \"createdBy\": \"Rahul\",\r\n            \"createdDate\": \"2023-02-09T09:47:48.783Z\",\r\n            \"updatedBy\": \"RTY\",\r\n            \"updatedDate\": \"2023-02-09T09:47:48.783Z\"\r\n        },\r\n        {\r\n            \"_id\": \"63e4c651d07d1dc2b949c6d0\",\r\n            \"cuisineName\": \"FFFF\",\r\n            \"cuisineImage\": \"url\",\r\n            \"cuisineImageThumb\": \"url\",\r\n            \"status\": true,\r\n            \"createdBy\": \"Rahul\",\r\n            \"createdDate\": \"2023-02-09T09:47:48.783Z\",\r\n            \"updatedBy\": \"RTY\",\r\n            \"updatedDate\": \"2023-02-09T09:47:48.783Z\"\r\n        },\r\n        {\r\n            \"_id\": \"63e4c655d07d1dc2b949c6d2\",\r\n            \"cuisineName\": \"DDD\",\r\n            \"cuisineImage\": \"url\",\r\n            \"cuisineImageThumb\": \"url\",\r\n            \"status\": true,\r\n            \"createdBy\": \"Rahul\",\r\n            \"createdDate\": \"2023-02-09T09:47:48.783Z\",\r\n            \"updatedBy\": \"RTY\",\r\n            \"updatedDate\": \"2023-02-09T09:47:48.783Z\"\r\n        }\r\n],\r\n    \"foodDiscountPrice\": \"120\",\r\n    \"foodDiscountPercentage\":\"30\",\r\n    \"foodDiscountStartDate\": \"Wednesday, February 8, 2023\",\r\n    \"foodDiscountEndDate\": \"Wednesday, February 8, 2023\",\r\n    \"foodPortionSize\": 7,\r\n    \"foodPortionSizeUnit\": \"20\",\r\n    \"foodMinimumOrderQty\": \"45\",\r\n    \"foodAdditionalInfo\": \"ointro\",\r\n    \"foodAdditionalTags\":[\"A\",\"B\",\"C\"],\r\n    \"foodExpiryTime\": \"Wednesday, February 8, 2023\",\r\n    \"customerDesireDeliveryTime\" : \"Wednesday, February 8, 2023\",\r\n    \"foodAvailableDays\":[\"A\",\"B\",\"C\"],\r\n    \"foodAvailableSameDaysEachWeek\": true,\r\n    \"foodOrderBeforeTime\": \"Wednesday, February 8, 2023\",\r\n    \"foodRating\": \"5\",\r\n    \"status\": true,\r\n   \r\n    \"foodLabel\": [\"A\",\"B\",\"C\"],\r\n    \"customerRequestedFoodQty\":  \"23\",\r\n    \"customerDesireDeliveryDate\": \"Wednesday, February 8, 2023\",\r\n    \"createdBy\":  \"Rahul\",\r\n    \"updatedBy\":  \"Raj\",\r\n    \"BSR\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-food/640c30ac5c59c840eb178daa",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-food",
+								"640c30ac5c59c840eb178daa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-food",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-food/63e3819aad229fe9bab58cca",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-food",
+								"63e3819aad229fe9bab58cca"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Food Review",
+			"item": [
+				{
+					"name": "create-food-review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"reviewDetails\":\"FOOD\",\r\n        \"reviewImage\":\"url\",\r\n        \"reviewVideo\":\"url\",\r\n        \"reviewStar\":2,\r\n        \"foodID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"orderID\":\"63e4c64cd07d1dc2b949c6ce\",\r\n        \"customerID\":\"63e4c64cd07d1dc2b949c6ce\"\r\n       \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-food-review",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-food-review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-food-review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-food-review",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-food-review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-food-review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-food-review/63e8ca8f314e191c77f347ab",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-food-review",
+								"63e8ca8f314e191c77f347ab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-food-review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"reviewDetails\":\"FOODFFFF\",\r\n        \"reviewImage\":\"url\",\r\n        \"reviewVideo\":\"url\",\r\n        \"reviewStar\":2,\r\n        \"foodID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"orderID\":\"63e4c64cd07d1dc2b949c6ce\",\r\n        \"customerID\":\"63e4c64cd07d1dc2b949c6ce\"\r\n       \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-food-review/63e8b378a0adb2d422245f36",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-food-review",
+								"63e8b378a0adb2d422245f36"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-food-review",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-food-review/63e8b378a0adb2d422245f36",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-food-review",
+								"63e8b378a0adb2d422245f36"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Region_State",
+			"item": [
+				{
+					"name": "create-region-state",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"regionName\": \"Kolkata\",\r\n    \"regionImage\": \"img\",\r\n    \"regionThumb\": \"img\",\r\n    \"status\": true,\r\n    \"countryID\": \"63e4bd183291fd211a3ad53e\",\r\n    \"createdBy\": \"Jon\",\r\n    \"updatedBy\": \"Raj\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-region-state",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-region-state"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-region-state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-region-state",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-region-state"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-region-state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-region-state/63e8acd3951a6bdb1537c3fc",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-region-state",
+								"63e8acd3951a6bdb1537c3fc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-region-state",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"regionName\": \"Kolkata-olu\",\r\n    \"regionImage\": \"img\",\r\n    \"regionThumb\": \"img\",\r\n    \"status\": true,\r\n    \"countryID\": \"63e4bd183291fd211a3ad53e\",\r\n    \"createdBy\": \"Jon\",\r\n    \"updatedBy\": \"Raj\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-region-state/63e8acd3951a6bdb1537c3fc",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-region-state",
+								"63e8acd3951a6bdb1537c3fc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-region-state",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-region-state/63e8acd3951a6bdb1537c3fc",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-region-state",
+								"63e8acd3951a6bdb1537c3fc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "create-city",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"regionID\": \"63e8b2e4798c4de2d1ba6c3b\",\r\n    \"countryID\": \"63e4bd183291fd211a3ad53e\",\r\n    \"cityName\": \"New Market kolkata\",\r\n    \"cityImage\": \"img\",\r\n    \"cityThumb\": \"img\",\r\n    \"status\": true,\r\n    \"createdBy\": \"Raj\",\r\n    \"updatedBy\": \"Nill\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-city",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-city",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-city/63e8b3e7392b22f2c2fa2d73",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-city",
+								"63e8b3e7392b22f2c2fa2d73"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-city",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"regionID\": \"63e8b2e4798c4de2d1ba6c3b\",\r\n    \"countryID\": \"63e4bd183291fd211a3ad53e\",\r\n    \"cityName\": \"New Market kolkata\",\r\n    \"cityImage\": \"imgRG\",\r\n    \"cityThumb\": \"img\",\r\n    \"status\": true,\r\n    \"createdBy\": \"Raj\",\r\n    \"updatedBy\": \"Nill\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-city/63e8b3e7392b22f2c2fa2d73",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-city",
+								"63e8b3e7392b22f2c2fa2d73"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-city",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-city/63e8b3e7392b22f2c2fa2d73",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-city",
+								"63e8b3e7392b22f2c2fa2d73"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AddressBook",
+			"item": [
+				{
+					"name": "create-address-book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityID\": \"63e8b32a798c4de2d1ba6c3d\",\r\n    \"regionID\": \"63e8b2e4798c4de2d1ba6c3b\",\r\n    \"countryID\": \"63e4bd183291fd211a3ad53e\",\r\n    \"customerID\": \"63e4bd183291fd211a3ad53e\",\r\n    \"createdBy\":\"63e4bd183291fd211a3ad53e\",\r\n    \"addressText\": \"CTG\",\r\n    \"addressType\":\"Home\",\r\n    \"shippingDefault\": true,\r\n    \"billingDefault\": true,\r\n    \"latitude\": \"203250\",\r\n    \"logitude\": \"8569200\",\r\n    \"zipCode\":\"45220\",\r\n    \"status\": true,\r\n    \"updatedBy\": \"Raj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-address-book",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-address-book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-address-book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-address-book",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-address-book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-address-book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-address-book/63e8c308aa3bd75fd4ba1cf9",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-address-book",
+								"63e8c308aa3bd75fd4ba1cf9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-address-book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cityID\": \"63e8b32a798c4de2d1ba6c3d\",\r\n    \"regionID\": \"63e8b2e4798c4de2d1ba6c3b\",\r\n    \"countryID\": \"63e4bd183291fd211a3ad53e\",\r\n    \"customerID\": \"63e4bd183291fd211a3ad53e\",\r\n    \"createdBy\":\"63e4bd183291fd211a3ad53e\",\r\n    \"addressText\": \"CTG\",\r\n    \"addressType\":\"Office\",\r\n    \"shippingDefault\": true,\r\n    \"billingDefault\": true,\r\n    \"latitude\": \"203250\",\r\n    \"logitude\": \"8569200\",\r\n    \"zipCode\":\"45220\",\r\n    \"status\": true,\r\n    \"updatedBy\": \"Raj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-address-book/63e8c308aa3bd75fd4ba1cf9",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-address-book",
+								"63e8c308aa3bd75fd4ba1cf9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-address-book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-address-book/63e8c308aa3bd75fd4ba1cf9",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-address-book",
+								"63e8c308aa3bd75fd4ba1cf9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CarItems",
+			"item": [
+				{
+					"name": "create-cart-items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"customerID\":  \"63e760ba7dfb72bf9f7d3083\",\r\n    \"foodName\":  \"Briani\",\r\n    \"foodQty\":  2,\r\n    \"foodUnitPrice\":  1200,\r\n    \"foodTotalPrice\":  5200,\r\n    \"status\": true,\r\n    \"createdBy\": \"Raj\",\r\n    \"updatedBy\":  \"Rahul\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-cart-items",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-cart-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-cart-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-cart-items",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-cart-items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-cart-items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-cart-items/63e9ee419475154ab49a87dc",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-cart-items",
+								"63e9ee419475154ab49a87dc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-cart-items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"customerID\":  \"63e760ba7dfb72bf9f7d3083\",\r\n    \"foodName\":  \"Briani Item\",\r\n    \"foodQty\":  2,\r\n    \"foodUnitPrice\":  4500,\r\n    \"foodTotalPrice\":  5200,\r\n    \"status\": true,\r\n    \"createdBy\": \"Raj\",\r\n    \"updatedBy\":  \"Rahul\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-cart-items/63e9e88fee49bf5386e3b1bf",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-cart-items",
+								"63e9e88fee49bf5386e3b1bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-cart-items",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-cart-items/63e9edf69475154ab49a87d7",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-cart-items",
+								"63e9edf69475154ab49a87d7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "create-orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"orderDeliveryAddressID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"orderBillingAddressID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"orderStatusID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"customerID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"orderNumber\": \"12\",\r\n    \"orderNotes\": \"gtff\",\r\n    \"orderTotalAmount\": 1250,\r\n    \"orderItems\": [\r\n      {\r\n        \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n        \"foodName\":\"FRF\",\r\n        \"foodQty\":\"15\",\r\n        \"foodUnitPrice\": \"5620\",\r\n        \"foodTotalPrice\": \"63201\",\r\n        \"kitchenName\": \"RTGR\",\r\n        \"sellerID\": \"63e760ba7dfb72bf9f7d3083\"\r\n      },\r\n       {\r\n        \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n        \"foodName\":\"FRF\",\r\n        \"foodQty\":\"15\",\r\n        \"foodUnitPrice\": \"5620\",\r\n        \"foodTotalPrice\": \"63201\",\r\n        \"kitchenName\": \"RTGR\",\r\n        \"sellerID\": \"63e760ba7dfb72bf9f7d3083\"\r\n      },\r\n       {\r\n        \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n        \"foodName\":\"FRF\",\r\n        \"foodQty\":\"15\",\r\n        \"foodUnitPrice\": \"5620\",\r\n        \"foodTotalPrice\": \"63201\",\r\n        \"kitchenName\": \"RTGR\",\r\n        \"sellerID\": \"63e760ba7dfb72bf9f7d3083\"\r\n      }\r\n    ],\r\n    \"paymentType\": \"ERWSD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-orders",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-orders",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-orders/63ea09ed140ab741ef3fdecf",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-orders",
+								"63ea09ed140ab741ef3fdecf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"orderDeliveryAddressID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"orderBillingAddressID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"orderStatusID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"customerID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"orderNumber\": \"12\",\r\n    \"orderNotes\": \"ASDSD\",\r\n    \"orderTotalAmount\": 1250,\r\n    \"orderItems\": [\r\n      {\r\n        \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n        \"foodName\":\"FRF\",\r\n        \"foodQty\":\"15\",\r\n        \"foodUnitPrice\": \"5620\",\r\n        \"foodTotalPrice\": \"63201\",\r\n        \"kitchenName\": \"RTGR\",\r\n        \"sellerID\": \"63e760ba7dfb72bf9f7d3083\"\r\n      },\r\n       {\r\n        \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n        \"foodName\":\"FRF\",\r\n        \"foodQty\":\"15\",\r\n        \"foodUnitPrice\": \"5620\",\r\n        \"foodTotalPrice\": \"63201\",\r\n        \"kitchenName\": \"RTGR\",\r\n        \"sellerID\": \"63e760ba7dfb72bf9f7d3083\"\r\n      },\r\n       {\r\n        \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n        \"foodName\":\"FRF\",\r\n        \"foodQty\":\"15\",\r\n        \"foodUnitPrice\": \"5620\",\r\n        \"foodTotalPrice\": \"63201\",\r\n        \"kitchenName\": \"RTGR\",\r\n        \"sellerID\": \"63e760ba7dfb72bf9f7d3083\"\r\n      }\r\n    ],\r\n    \"paymentType\": \"ERWSD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-orders/63ea09ed140ab741ef3fdecf",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-orders",
+								"63ea09ed140ab741ef3fdecf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-orders",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-orders/63ea09ed140ab741ef3fdecf",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-orders",
+								"63ea09ed140ab741ef3fdecf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OrderTacking",
+			"item": [
+				{
+					"name": "create-orders-tacking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"orderID\": \"63ea09d2140ab741ef3fdecc\",\r\n    \"orderStatusID\": \"63e22a4cad9f93c64569652e\",\r\n    \"comment\": \"comment\",\r\n    \"createdBy\": \"Raj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-orders-tacking",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-orders-tacking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-orders-tacking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-orders-tacking",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-orders-tacking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-orders-tacking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-orders-tacking/63eb482a2de91ae5af6731e2",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-orders-tacking",
+								"63eb482a2de91ae5af6731e2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-orders-tacking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"orderID\": \"63ea09d2140ab741ef3fdecc\",\r\n    \"orderStatusID\": \"63e22a4cad9f93c64569652e\",\r\n    \"comment\": \"commentTY\",\r\n    \"createdBy\": \"Raj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-orders-tacking/63eb45bcd2417d5c6dd072d5",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-orders-tacking",
+								"63eb45bcd2417d5c6dd072d5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-orders-tacking",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-orders-tacking/63eb45bcd2417d5c6dd072d5",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-orders-tacking",
+								"63eb45bcd2417d5c6dd072d5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RiderReview",
+			"item": [
+				{
+					"name": "create-rider-review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"orderID\": \"63ea09d2140ab741ef3fdecc\",\r\n    \"riderID\": \"63ea09d2140ab741ef3fdecc\",\r\n    \"reviewDetails\": \"WWWEEE\",\r\n    \"reviewImage\": \"img\",\r\n    \"reviewVideo\": \"vdo\",\r\n    \"reviewStar\": \"star\",\r\n    \"reviewBy\": \"Robin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-rider-review",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-rider-review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-rider-review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-rider-review",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-rider-review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-rider-review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-rider-review/63eb5422f1d0f3e9b5d24e2c",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-rider-review",
+								"63eb5422f1d0f3e9b5d24e2c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-rider-review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"foodID\": \"63e760ba7dfb72bf9f7d3083\",\r\n    \"orderID\": \"63ea09d2140ab741ef3fdecc\",\r\n    \"riderID\": \"63ea09d2140ab741ef3fdecc\",\r\n    \"reviewDetails\": \"RRRRR\",\r\n    \"reviewImage\": \"img\",\r\n    \"reviewVideo\": \"vdo\",\r\n    \"reviewStar\": \"star\",\r\n    \"reviewBy\": \"Robin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-rider-review/63eb521593005c43e498cd3a",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-rider-review",
+								"63eb521593005c43e498cd3a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-rider-review",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/delete-rider-review/63eb521593005c43e498cd3a",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-rider-review",
+								"63eb521593005c43e498cd3a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recipe",
+			"item": [
+				{
+					"name": "create-recipe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n            \"recipeName\": \"name\",\r\n            \"preparationTime\": \"2023-02-19T11:04:41.869Z\",\r\n            \"recipeTips\": \"asdf\",\r\n            \"isMyOwnRecipe\": true,\r\n            \"viewCount\": 4,\r\n            \"likeCount\": 4,\r\n            \"shareCount\": 4,\r\n            \"createdBy\": \"amit\",\r\n            \"createdDate\": \"2023-02-19T11:04:41.870Z\",\r\n            \"updatedBy\": \"amit\",\r\n            \"updatedDate\": \"2023-02-19T11:04:41.870Z\",\r\n            \"ingredients\": [\r\n                 {\r\n            \"Qty\": \"1\",\r\n            \"qtyUnit\": \"unit\",\r\n            \"ingredientsName\": \"name\"\r\n        \r\n               }\r\n            ],\r\n\r\n            \"recipeSteps\": [\r\n                 {\r\n            \"stepName\": \"name\",\r\n            \"Photo\":\"url\",\r\n            \"Video\": \"url\"\r\n\r\n               }\r\n            ]\r\n \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-recipe",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-recipe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-recipe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-recipe",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-recipe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-recipe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-recipe/63f319bebae00abd959c98c1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-recipe",
+								"63f319bebae00abd959c98c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-recipe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n            \"recipeName\": \"nameDDDDD\",\r\n            \"preparationTime\": \"2023-02-19T11:04:41.869Z\",\r\n            \"recipeTips\": \"asdf\",\r\n            \"isMyOwnRecipe\": true,\r\n            \"viewCount\": 4,\r\n            \"likeCount\": 4,\r\n            \"shareCount\": 4,\r\n            \"createdBy\": \"amit\",\r\n            \"createdDate\": \"2023-02-19T11:04:41.870Z\",\r\n            \"updatedBy\": \"amit\",\r\n            \"updatedDate\": \"2023-02-19T11:04:41.870Z\",\r\n            \"ingredients\": [\r\n                 {\r\n            \"Qty\": \"1\",\r\n            \"qtyUnit\": \"unit\",\r\n            \"ingredientsName\": \"name\"\r\n        \r\n               }\r\n            ],\r\n\r\n            \"recipeSteps\": [\r\n                 {\r\n            \"stepName\": \"name\",\r\n            \"Photo\":\"url\",\r\n            \"Video\": \"url\"\r\n\r\n               }\r\n            ]\r\n \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-recipe/63f319bebae00abd959c98c1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-recipe",
+								"63f319bebae00abd959c98c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-recipe",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-recipe/63f319bebae00abd959c98c1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-recipe",
+								"63f319bebae00abd959c98c1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coupon",
+			"item": [
+				{
+					"name": "create-coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"couponRefOrderID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"categorieID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"couponForProductID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"sellerID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"createdBy\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"isForReview\":true,\r\n        \"isCouponForAllProduct\":true,\r\n   \r\n        \"couponCode\":\"smart\",\r\n     \r\n        \"couponAmount\":50,\r\n        \"couponIsPercentage\":true,\r\n        \"couponMinPurchase\":5,\r\n        \"couponForUserID\":[\r\n            1\r\n\r\n        ]\r\n\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-coupon",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-coupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-coupon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-coupon",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-coupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-coupon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-coupon/63f31cd9774e70ffc0d40f47",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-coupon",
+								"63f31cd9774e70ffc0d40f47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"couponRefOrderID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"categorieID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"couponForProductID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"sellerID\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"createdBy\":\"63e760ba7dfb72bf9f7d3083\",\r\n        \"isForReview\":true,\r\n        \"isCouponForAllProduct\":true,\r\n   \r\n        \"couponCode\":\"smartDDDD\",\r\n     \r\n        \"couponAmount\":50,\r\n        \"couponIsPercentage\":true,\r\n        \"couponMinPurchase\":5,\r\n        \"couponForUserID\":[\r\n            1\r\n\r\n        ]\r\n\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-coupon/63f31cd9774e70ffc0d40f47",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-coupon",
+								"63f31cd9774e70ffc0d40f47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-coupon",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-coupon/63f31cd9774e70ffc0d40f47",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-coupon",
+								"63f31cd9774e70ffc0d40f47"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Food Diary",
+			"item": [
+				{
+					"name": "create-food-diary",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blogTitle\":\"blogTitle\",\r\n    \"blogSlug\":\"slug\",\r\n    \"blogImage\":\"url\",\r\n    \"blogVideo\":\"url\",\r\n    \"captionTitle\":\"title\",\r\n    \"captionDesc\":\"lorem its\",\r\n    \"blogShortDesc\":\"short blog\",\r\n    \"blogDesc\":\"desc\",\r\n    \"blogKeyWords\":[\"key1\"],\r\n    \"blogTags\":[\r\n        \"tag1\",\r\n        \"tag2\"\r\n    ]\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-food-diary",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-food-diary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-food-diary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-food-diary",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-food-diary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-food-diary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-food-diary/63f32281afd9145461c77a91",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-food-diary",
+								"63f32281afd9145461c77a91"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-food-diary",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blogTitle\":\"blogTitleEEEEE\",\r\n    \"blogSlug\":\"slug\",\r\n    \"blogImage\":\"url\",\r\n    \"blogVideo\":\"url\",\r\n    \"captionTitle\":\"title\",\r\n    \"captionDesc\":\"lorem its\",\r\n    \"blogShortDesc\":\"short blog\",\r\n    \"blogDesc\":\"desc\",\r\n    \"blogKeyWords\":[\"key1\"],\r\n    \"blogTags\":[\r\n        \"tag1\",\r\n        \"tag2\"\r\n    ]\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-food-diary/63f32281afd9145461c77a91",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-food-diary",
+								"63f32281afd9145461c77a91"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-food-diary",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-food-diary/63f32281afd9145461c77a91",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-food-diary",
+								"63f32281afd9145461c77a91"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Become a seller",
+			"item": [
+				{
+					"name": "create-become-seller",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sellerProfilePhoto\": \"url\",\r\n    \"kitchenName\":\"name\",\r\n    \"kitchenVideos\": \"url\",\r\n    \"sellerNationality\":\"bd\",\r\n    \"sellerNationalityByBorn\":\"bd\",\r\n    \"sellerNationalityID\": \"sdfdsf\",\r\n    \"sellerNationalityByBornID\": \"sdfdsf\",\r\n    \"isSellInstantFood\": true,\r\n    \"isTakeWishOrder\": false,\r\n    \"isTakePreOrder\": \"false\",\r\n    \"isTakeCateringOrder\":true,\r\n    \"Latitude\": \"sdfdsfds\",\r\n   \"longitude\": \"sdfsdfdsdfs\",\r\n    \"kitchenImages\": [\r\n        {\r\n            \"captionTitle\":\"title   \",\r\n            \"captionDesc\":\"caption running\",\r\n            \"image\":\"url\"\r\n        }\r\n    ],\r\n      \"cusinesArray\": [\r\n        {\r\n            \"cusineName\":\"food\",\r\n            \"countryName\":\"bd\",\r\n            \"cusineID\":\"63e4bd183291fd211a3ad53e\",\r\n            \"countryID\":\"63e4bd183291fd211a3ad53e\"\r\n        }\r\n    ],\r\n     \"dishesMedia\": [\r\n        {\r\n            \"captionText\":\"dishesmedia caption\",\r\n            \"captionDesc\":\"lorem.....\",\r\n            \"photo\":\"url\",\r\n            \"video\":\"url\"\r\n        }\r\n    ],\r\n     \"otherFoodSkillsMedia\":[\r\n        {\r\n            \"foodType\":\"bd food\",\r\n            \"photo\":\"url\",\r\n            \"video\":\"url\",\r\n            \"captionText\":\"caption text\",\r\n            \"captionDesc\":\"caption desh\"\r\n        }\r\n    ],\r\n    \"myExperimentalFoodMedia\":[\r\n        {\r\n            \"photo\":\"url\",\r\n            \"video\":\"url\",\r\n            \"captionText\":\"caption text\",\r\n            \"captionDesc\":\"caption desh\"\r\n        }\r\n    ],\r\n    \"bankDetails\": [\r\n        {\r\n            \"bankAccNo\":\"123213421\",\r\n            \"bankAccName\": \"abr\",\r\n            \"bankRoutingNo\": \"12344\",\r\n            \"bankName\": \"nrb\",\r\n            \"currency\": \"bdt\",\r\n            \"bankVerificationCode\": \"13421\"\r\n        }\r\n\r\n    ],\r\n    \"myRestrictions\":[\r\n        {\r\n\r\n            \"tagName\":\"name\"\r\n        }\r\n    ]\r\n  \r\n    \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-become-seller",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-become-seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-become-seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-become-seller",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-become-seller"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-become-seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-become-seller/63eb5d78d9e923659a5dd86b",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-become-seller",
+								"63eb5d78d9e923659a5dd86b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-become-seller",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sellerProfilePhoto\": \"urleeeeee\",\r\n    \"kitchenName\":\"name\",\r\n    \"kitchenVideos\": \"url\",\r\n    \"sellerNationality\":\"bd\",\r\n    \"sellerNationalityByBorn\":\"bd\",\r\n    \"sellerNationalityID\": \"sdfdsf\",\r\n    \"sellerNationalityByBornID\": \"sdfdsf\",\r\n    \"isSellInstantFood\": true,\r\n    \"isTakeWishOrder\": false,\r\n    \"isTakePreOrder\": \"false\",\r\n    \"isTakeCateringOrder\":true,\r\n    \"Latitude\": \"sdfdsfds\",\r\n   \"longitude\": \"sdfsdfdsdfs\",\r\n    \"kitchenImages\": [\r\n        {\r\n            \"captionTitle\":\"title   \",\r\n            \"captionDesc\":\"caption running\",\r\n            \"image\":\"url\"\r\n        }\r\n    ],\r\n      \"cusinesArray\": [\r\n        {\r\n            \"cusineName\":\"food\",\r\n            \"countryName\":\"bd\",\r\n            \"cusineID\":\"63e4bd183291fd211a3ad53e\",\r\n            \"countryID\":\"63e4bd183291fd211a3ad53e\"\r\n        }\r\n    ],\r\n     \"dishesMedia\": [\r\n        {\r\n            \"captionText\":\"dishesmedia caption\",\r\n            \"captionDesc\":\"lorem.....\",\r\n            \"photo\":\"url\",\r\n            \"video\":\"url\"\r\n        }\r\n    ],\r\n     \"otherFoodSkillsMedia\":[\r\n        {\r\n            \"foodType\":\"bd food\",\r\n            \"photo\":\"url\",\r\n            \"video\":\"url\",\r\n            \"captionText\":\"caption text\",\r\n            \"captionDesc\":\"caption desh\"\r\n        }\r\n    ],\r\n    \"myExperimentalFoodMedia\":[\r\n        {\r\n            \"photo\":\"url\",\r\n            \"video\":\"url\",\r\n            \"captionText\":\"caption text\",\r\n            \"captionDesc\":\"caption desh\"\r\n        }\r\n    ],\r\n    \"bankDetails\": [\r\n        {\r\n            \"bankAccNo\":\"123213421\",\r\n            \"bankAccName\": \"abr\",\r\n            \"bankRoutingNo\": \"12344\",\r\n            \"bankName\": \"nrb\",\r\n            \"currency\": \"bdt\",\r\n            \"bankVerificationCode\": \"13421\"\r\n        }\r\n\r\n    ],\r\n    \"myRestrictions\":[\r\n        {\r\n\r\n            \"tagName\":\"name\"\r\n        }\r\n    ]\r\n  \r\n    \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-become-seller/63eb5d78d9e923659a5dd86b",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-become-seller",
+								"63eb5d78d9e923659a5dd86b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-become-seller",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-become-seller/63eb5d78d9e923659a5dd86b",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-become-seller",
+								"63eb5d78d9e923659a5dd86b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-seller-with-food-details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":[\"63f331a8ce096ab67640ec8b\", \"640eeeb3be0a98ae3996d83b\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/get-seller-with-food-details",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-seller-with-food-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-food-by-seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-food-by-seller/64101b05e20c987d3f511ac4/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-food-by-seller",
+								"64101b05e20c987d3f511ac4",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-order-by-single-seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-order-by-single-seller/64101b05e20c987d3f511ac4",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-order-by-single-seller",
+								"64101b05e20c987d3f511ac4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rider",
+			"item": [
+				{
+					"name": "create-rider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"riderName\": \"String\",\r\n    \"riderMobileNo\": \"String\",\r\n    \"addressID\":  \"63eb3c5af7ec2bc366654b88\" ,\r\n    \"riderApproval\": true,\r\n    \"vehicleDetails\": [\r\n      {\r\n        \"vehicleType\": \"bus\",\r\n        \"vehicleRegNo\": \"120\",\r\n        \"vehicleTaxToken\": \"token1200\",\r\n        \"vehicleTaxTokenExpiry\": \"10-120-2024\"\r\n      }\r\n    ],\r\n    \"License\": [\r\n      {\r\n        \"licenseType\": \"new\",\r\n        \"LicenseNo\": \"152481-45210\",\r\n        \"licenseExpiryDate\":\"25-2-2024\"\r\n      }\r\n    ],\r\n    \"Reviews\": [\r\n      {\r\n        \"reviewBy\": \"raj\",\r\n        \"comments\": \"Hello\",\r\n        \"reviewStar\": \"4\",\r\n        \"orderID\": \"63eb3c5af7ec2bc366654b88\"\r\n        \r\n      }\r\n    ],\r\n\r\n    \"zipCode\":\"1250\",\r\n    \"cityID\": \"63eb3c5af7ec2bc366654b88\",\r\n    \"regionID\":\"63eb3c5af7ec2bc366654b88\",\r\n    \"countryID\": \"63eb3c5af7ec2bc366654b88\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-rider",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-rider"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-rider",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-rider",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-rider"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-rider",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-rider/63f3522884288a6f27b843f5",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-rider",
+								"63f3522884288a6f27b843f5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-rider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"riderName\": \"StringEEEE\",\r\n    \"riderMobileNo\": \"String\",\r\n    \"addressID\":  \"63eb3c5af7ec2bc366654b88\" ,\r\n    \"riderApproval\": true,\r\n    \"vehicleDetails\": [\r\n      {\r\n        \"vehicleType\": \"bus\",\r\n        \"vehicleRegNo\": \"120\",\r\n        \"vehicleTaxToken\": \"token1200\",\r\n        \"vehicleTaxTokenExpiry\": \"10-120-2024\"\r\n      }\r\n    ],\r\n    \"License\": [\r\n      {\r\n        \"licenseType\": \"new\",\r\n        \"LicenseNo\": \"152481-45210\",\r\n        \"licenseExpiryDate\":\"25-2-2024\"\r\n      }\r\n    ],\r\n    \"Reviews\": [\r\n      {\r\n        \"reviewBy\": \"raj\",\r\n        \"comments\": \"Hello\",\r\n        \"reviewStar\": \"4\",\r\n        \"orderID\": \"63eb3c5af7ec2bc366654b88\"\r\n        \r\n      }\r\n    ],\r\n\r\n    \"zipCode\":\"1250\",\r\n    \"cityID\": \"63eb3c5af7ec2bc366654b88\",\r\n    \"regionID\":\"63eb3c5af7ec2bc366654b88\",\r\n    \"countryID\": \"63eb3c5af7ec2bc366654b88\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-rider/63f3506284288a6f27b843e8",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-rider",
+								"63f3506284288a6f27b843e8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-rider",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-rider/63f3506284288a6f27b843e8",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-rider",
+								"63f3506284288a6f27b843e8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Food Photo",
+			"item": [
+				{
+					"name": "create-food-photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n       \"foodID\":\"63e760ba7dfb72bf9f7d3083\",\r\n   \r\n    \"foodImage\":\"url\",\r\n    \"foodThumb\":\"url\",\r\n    \"foodVideo\":\"url\"\r\n\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-food-photo",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-food-photo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-food-photo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-food-photo",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-food-photo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-food-photo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-food-photo/63f35439b08ce4c132fb2fdd",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-food-photo",
+								"63f35439b08ce4c132fb2fdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-food-photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n       \"foodID\":\"63e760ba7dfb72bf9f7d3083\",\r\n   \r\n    \"foodImage\":\"urltttt\",\r\n    \"foodThumb\":\"url\",\r\n    \"foodVideo\":\"url\"\r\n\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-food-photo/63f35439b08ce4c132fb2fdd",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-food-photo",
+								"63f35439b08ce4c132fb2fdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-food-photo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-food-photo/63f35439b08ce4c132fb2fdd",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-food-photo",
+								"63f35439b08ce4c132fb2fdd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Banners API",
+			"item": [
+				{
+					"name": "create-banners",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"bannerTitle\": \"Chocolate Chip Cookies with Orange Marmalade\",\r\n    \"bannerDesc\": \"RTTT\",\r\n    \"bannerImage\": \"https://www.foodiesfeed.com/wp-content/uploads/2019/03/chocolate-chip-cookies-with-orange-marmalade.jpg\",\r\n    \"bannerBackgroundColor\": \"Pink\",\r\n    \"bannerButtonLabel\": \"More chocolate\",\r\n    \"bannerButtonColor\": \"RTTT\",\r\n    \"bannerButtonURL\": \"RTTT\",\r\n    \"Status\": true,\r\n    \"orderBy\":\"RTTT\",\r\n    \"bannerExpiry\": \"RTTT\",\r\n    \"categoryIDs\": [ \"63f35454b08ce4c132fb2fdf\", \"63f35454b08ce4c132fb2fdf\", \"63f35454b08ce4c132fb2fdf\" ],\r\n    \"sellerID\": \"63f35454b08ce4c132fb2fdf\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-banners",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-banners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-banners",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-banners",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-banners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-banners",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-banners/63f72e6c1216f60e09d76761",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-banners",
+								"63f72e6c1216f60e09d76761"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-banners",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"bannerTitle\": \"RRRRRRRRRRRRRRRRRR\",\r\n    \"bannerDesc\": \"RTTT\",\r\n    \"bannerImage\": \"RTTT\",\r\n    \"bannerBackgroundColor\": \"RTTT\",\r\n    \"bannerButtonLabel\": \"RTTT\",\r\n    \"bannerButtonColor\": \"RTTT\",\r\n    \"bannerButtonURL\": \"RTTT\",\r\n    \"Status\": true,\r\n    \"orderBy\":\"RTTT\",\r\n    \"bannerExpiry\": \"RTTT\",\r\n    \"categoryIDs\": [ \"63f35454b08ce4c132fb2fdf\", \"63f35454b08ce4c132fb2fdf\", \"63f35454b08ce4c132fb2fdf\" ],\r\n    \"sellerID\": \"63f35454b08ce4c132fb2fdf\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-banners/63f72cf01216f60e09d7675b",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-banners",
+								"63f72cf01216f60e09d7675b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-banners",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-banners/63f72cf01216f60e09d7675b",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-banners",
+								"63f72cf01216f60e09d7675b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OTP",
+			"item": []
+		},
+		{
+			"name": "Home page section",
+			"item": [
+				{
+					"name": "create-home-page-sections",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"sectionTitle1\":\"indian food\",\r\n    \"sectionTitle2\":\"\",\r\n    \"sectionTitle3\":\"\",\r\n    \"sectionTitle4\":\"\",\r\n    \"sectionStyle\":\"Style2\",\r\n    \"sectionCategoriesColor\":[\"black\"],\r\n    \"orderBy\":3,\r\n    \"status\":true,\r\n    \"adImage\":\"url\",\r\n    \"adUrl\":\"url\",\r\n    \"adCode\":\"123213\",\r\n    \"displayLimit\":4,\r\n    \"sectionCategories1\":[\r\n        {\r\n            \"label\":\"\"\r\n        }\r\n    ],\r\n    \"sectionCategories2\":[\r\n      {\r\n            \"label\":\"indian\",\r\n            \"value\":\"63de3c57f7e19896cb8799d1\"\r\n        }\r\n    ],\r\n    \"sectionCategories3\":[\r\n    {\r\n            \"label\":\"\"\r\n        }\r\n    ],\r\n    \"sectionCategories4\":[\r\n      {\r\n            \"label\":\"\"\r\n        }\r\n    ]\r\n\r\n\r\n\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-home-page-sections",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-home-page-sections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-home-page-sections",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-home-page-sections",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-home-page-sections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-home-page-sections",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-home-page-sections/63fc713f35ad857675054fc7",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-home-page-sections",
+								"63fc713f35ad857675054fc7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-home-page-sections",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"sectionTitle1\":\"indian DDDDD\",\r\n    \"sectionTitle2\":\"\",\r\n    \"sectionTitle3\":\"\",\r\n    \"sectionTitle4\":\"\",\r\n    \"sectionStyle\":\"style1\",\r\n    \"sectionCategoriesColor\":[\"black\"],\r\n    \"orderBy\":3,\r\n    \"status\":true,\r\n    \"adImage\":\"url\",\r\n    \"adUrl\":\"url\",\r\n    \"adCode\":\"123213\",\r\n    \"displayLimit\":4,\r\n    \"sectionCategories1\":[\r\n        {\r\n            \"title\":\"indian\",\r\n            \"categoryID\":\"63de3c57f7e19896cb8799d1\"\r\n        }\r\n    ],\r\n    \"sectionCategories2\":[\r\n        {\r\n            \"title\":\"\"\r\n         \r\n        }\r\n    ],\r\n    \"sectionCategories3\":[\r\n        {\r\n            \"title\":\"\"\r\n           \r\n        }\r\n    ],\r\n    \"sectionCategories4\":[\r\n        {\r\n            \"title\":\"\"\r\n        \r\n        }\r\n    ]\r\n\r\n\r\n\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-home-page-sections/63fc713f35ad857675054fc7",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-home-page-sections",
+								"63fc713f35ad857675054fc7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-home-page-sections",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-home-page-sections/640c2223162bcfe7d1cbf8dc",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-home-page-sections",
+								"640c2223162bcfe7d1cbf8dc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "How Do We DO",
+			"item": [
+				{
+					"name": "create-how-do-we-do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Details\": \"url\",\r\n    \"beforeImage\": \"url\",\r\n    \"afterImage\": \"url\",\r\n    \"Status\": true\r\n\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-how-do-we-do",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-how-do-we-do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-how-do-we-do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-how-do-we-do",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-how-do-we-do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-how-do-we-do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-how-do-we-do/63fc92e6dc016105a20af70d",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-how-do-we-do",
+								"63fc92e6dc016105a20af70d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-how-do-we-do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Details\": \"urlcdddd\",\r\n    \"beforeImage\": \"url\",\r\n    \"afterImage\": \"url\",\r\n    \"Status\": true\r\n\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-how-do-we-do/63fc92e6dc016105a20af70d",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-how-do-we-do",
+								"63fc92e6dc016105a20af70d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-how-do-we-do",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-how-do-we-do/63fc92e6dc016105a20af70d",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-how-do-we-do",
+								"63fc92e6dc016105a20af70d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Extra",
+			"item": [
+				{
+					"name": "/image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/C:/Users/HP/Downloads/Rlogical-Blog-Images-thumbnail-1.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CircleTypeFood",
+			"item": [
+				{
+					"name": "create-circle-type-food",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n    \"circleType\":\"name\",\r\n    \"circleCategoryID\":[\r\n        {\r\n            \"categoryID\":\"640d7fa571e172d1083652a7\"\r\n        }\r\n    ],\r\n    \"circleCountryID\":[\r\n        {\r\n            \"countryID\":\"640d7fa571e172d1083652a7\"\r\n        }\r\n    ],\r\n    \"circleLimit\":5,\r\n    \"circleByReview\":true,\r\n    \"bestSellingFood\":false,\r\n    \"circleFoods\":[\"array\"],\r\n    \"circleSellerID\":[\r\n        {\r\n            \"sellerID\":\"640d7fa571e172d1083652a7\"\r\n        }\r\n    ]\r\n\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-circle-type-food",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-circle-type-food"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-circle-type-food",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-circle-type-food",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-circle-type-food"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-circle-type-food",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-circle-type-food/640d7fa571e172d1083652a7",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-circle-type-food",
+								"640d7fa571e172d1083652a7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-circle-type-food",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n    \"circleType\":\"nameDDDDDD\",\r\n    \"circleCategoryID\":[\r\n        {\r\n            \"categoryID\":\"640d7fa571e172d1083652a7\"\r\n        }\r\n    ],\r\n    \"circleCountryID\":[\r\n        {\r\n            \"countryID\":\"640d7fa571e172d1083652a7\"\r\n        }\r\n    ],\r\n    \"circleLimit\":5,\r\n    \"circleByReview\":true,\r\n    \"bestSellingFood\":false,\r\n    \"circleFoods\":[\"array\"],\r\n    \"circleSellerID\":[\r\n        {\r\n            \"sellerID\":\"640d7fa571e172d1083652a7\"\r\n        }\r\n    ]\r\n\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-circle-type-food/640d7fa571e172d1083652a7",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-circle-type-food",
+								"640d7fa571e172d1083652a7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-circle-type-food",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-circle-type-food/640d7fa571e172d1083652a7",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-circle-type-food",
+								"640d7fa571e172d1083652a7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Buyer question and answear",
+			"item": [
+				{
+					"name": "create-buyer-question-answear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"quesTitle\": \"question\",\r\n    \"quesByBuyerID\": \"640c2f815c59c840eb178d95\",\r\n    \"quesByBuyerName\": \"nam111\",\r\n    \"quesAnswers\": [\r\n      {\r\n        \"Answer\": \"ans\",\r\n        \"answerByBuyerID\": \"640c2f815c59c840eb178d95\",\r\n        \"answerByBuyerName\": \"asdfa\"\r\n       \r\n      }\r\n    ],\r\n\r\n    \"FoodID\": \"640c2f815c59c840eb178d95\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/create-buyer-question-answear",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"create-buyer-question-answear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-buyer-question-answear",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-buyer-question-answear",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-buyer-question-answear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-buyer-question-answear",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/get-single-buyer-question-answear/641055c649052bffb6e54aff",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"get-single-buyer-question-answear",
+								"641055c649052bffb6e54aff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-buyer-question-answear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"quesTitle\": \"quesDDDDDDtion\",\r\n    \"quesByBuyerID\": \"640c2f815c59c840eb178d95\",\r\n    \"quesByBuyerName\": \"nam111\",\r\n    \"quesAnswers\": [\r\n      {\r\n        \"Answer\": \"ans\",\r\n        \"answerByBuyerID\": \"640c2f815c59c840eb178d95\",\r\n        \"answerByBuyerName\": \"asdfa\"\r\n       \r\n      }\r\n    ],\r\n\r\n    \"FoodID\": \"640c2f815c59c840eb178d95\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/update-buyer-question-answear/641055c649052bffb6e54aff",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"update-buyer-question-answear",
+								"641055c649052bffb6e54aff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-buyer-question-answear",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/delete-buyer-question-answear/641055c649052bffb6e54aff",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"delete-buyer-question-answear",
+								"641055c649052bffb6e54aff"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODA1MDkxNDMsImRhdGEiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2Nzc5MTcxNDN9.Enkf37kQgaqISHrFsVa5ZSNDt53isFgKV3IViDV4sDo",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseURL",
+			"value": "http://localhost:5000/api/v1",
+			"type": "string"
+		}
+	]
+}

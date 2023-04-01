@@ -1,0 +1,1 @@
+mongoDB Campass = mongodb+srv://admin:00000000@cluster0.4sjujzo.mongodb.net/test
